@@ -1,0 +1,26 @@
+.screen_layout_one{
+    background: url("../img/sc1.jpg") no-repeat center;
+}
+
+.screen_layout_one_wrap{
+    width: var(--screenItemWidth);
+    height:var(--screenItemHeight);
+    margin:0 auto;
+    position: relative;
+}
+
+.screen_layout_one_wrap>dl{
+    width: var(--screenItemWidth);
+    position: absolute;
+    top:240px;
+    color: var(--defaultTextColorPrimary);
+    text-align: center;
+    left:50%;
+    margin-left: -600px;
+}
+.screen_layout_one_wrap>dl>dt{
+    font-size: var(--mainTextSize);
+}
+.screen_layout_one_wrap>dl>dd{
+    font-size: var(--secondTextSize);
+}

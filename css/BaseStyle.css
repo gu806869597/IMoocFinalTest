@@ -1,0 +1,34 @@
+:root{
+  --matchParent:100% ;
+  --toolbarSize:67px ;
+  --screenItemWidth : 1200px ;
+  --screenItemHeight : 640px ;
+  --textColorPrimary:#07111b ;
+  --secondTextColorPrimary: #f00000 ;
+  --defaultTextColorPrimary: #f1f1f1 ;
+
+  --mainTextSize: 42px ;
+  --secondTextSize : 16px ;
+
+  --html5TextColor : #1ca4ff ;
+  --phpTextColor : #4f7dfd ;
+  --javaTextColor : #ff6060 ;
+  --pythonTextColor : #27bde5 ;
+  --nodeTextColor : #90bd4b ;
+}
+
+section{
+  width: var(--matchParent);
+  height: var(--screenItemHeight);
+}
+
+
+*{
+  margin: 0 ;
+  padding: 0 ;
+}
+
+body{
+  font-family:"Microsoft YaHei";
+  font-size:var(--secondTextSize);
+}
