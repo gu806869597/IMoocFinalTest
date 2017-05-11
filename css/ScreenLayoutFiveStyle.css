@@ -1,0 +1,12 @@
+.screen_layout_five{
+    background: url("../img/sc5.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.screen_layout_five_wrap{
+    width:var(--screenItemWidth);
+    height: var(--screenItemHeight);
+    position: relative;
+    margin:0 auto;
+}
+

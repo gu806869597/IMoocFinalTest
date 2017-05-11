@@ -1,5 +1,6 @@
 .screen_layout_one{
     background: url("../img/sc1.jpg") no-repeat center;
+    background-size: cover ;
 }
 
 .screen_layout_one_wrap{
@@ -19,8 +20,10 @@
     margin-left: -600px;
 }
 .screen_layout_one_wrap>dl>dt{
+    font-weight:bold;
     font-size: var(--mainTextSize);
 }
 .screen_layout_one_wrap>dl>dd{
+    margin-top: 26px;
     font-size: var(--secondTextSize);
 }

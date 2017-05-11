@@ -1,3 +1,68 @@
 .screen_layout_two{
-    background: #f1f1f1;
+    background: #f3f5f7;
+    position: relative;
+}
+
+.screen_layout_two_wrap{
+    width: var(--screenItemWidth);
+    height: var(--screenItemHeight);
+    margin:0 auto;
+}
+
+.screen_layout_two_wrap>dl{
+    width: var(--screenItemWidth);
+    position: absolute;
+    top:90px;
+    text-align: center;
+    left:50%;
+    margin-left: -600px;
+    color: var(--mainTextSize);
+}
+
+.screen_layout_two_wrap>dl>dt{
+    font-weight:bold;
+    font-size: var(--mainTextSize);
+}
+
+.screen_layout_two_wrap>dl>dd{
+    padding-top: 44px ;
+    font-size: var(--secondTextSize);
+}
+
+.screen_layout_two_man{
+    width:var(--screenItemWidth);
+    height:380px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-600px;
+    background:url("../img/sc2-1.png") no-repeat center;
+    background-size: 275px 380px ;
+    z-index: 4;
+}
+
+.screen_layout_two_bg{
+    width:var(--screenItemWidth);
+    height:361px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left: -600px;
+    background: url("../img/sc2.png") no-repeat center;
+    background-size: 750px 361px;
+    z-index: 2 ;
+}
+
+.screen_layout_two_rocket{
+    width:var(--screenItemWidth);
+    height:205px ;
+    position: absolute;
+    bottom: 0 ;
+    left:50%;
+    margin-left: -600px;
+    background: url("../img/sc2-2.png") no-repeat center;
+    background-size: 266px 205px ;
+    z-index: 3;
+    padding-left: 200px;
+    padding-bottom: 195px;
 }

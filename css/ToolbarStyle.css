@@ -2,11 +2,9 @@ header{
     width: var(--matchParent);
     height:var(--toolbarSize);
     background: linear-gradient(rgba(21,21,21,1),rgba(255,255,255,0));
-    position:relative;
     position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 99;
 }
 

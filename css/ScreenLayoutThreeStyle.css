@@ -1,0 +1,79 @@
+.screen_layout_three{
+    background: #2b333b;
+}
+.screen_layout_three_wrap{
+    width: var(--screenItemWidth);
+    height:var(--screenItemHeight);
+    margin:0 auto;
+    position: relative;
+}
+.screen_layout_three_image{
+    width:var(--screenItemHeight);
+    height: var(--screenItemHeight);
+    background: url("../img/sc3.png") no-repeat center;
+    background-size: 620px 620px;
+    margin-left: 129px;
+    float: left;
+}
+.screen_layout_three_wrap>dl{
+    position: absolute;
+    right: 0;
+    margin-top:229px;
+    color: var(--defaultTextColorPrimary);
+}
+
+.screen_layout_three_wrap>dl>dt{
+    font-weight:bold;
+    font-size: var(--mainTextSize);
+}
+
+.screen_layout_three_wrap>dl>dd{
+    padding-top: 50px;
+}
+
+.screen_layout_three_wrap>nav{
+    position: absolute;
+    bottom:46px ;
+    right:0;
+}
+
+.screen_layout_three_wrap>nav>a{
+    text-decoration: none;
+    border-radius: 45px;
+    width:70px;
+    height:70px;
+    display: block;
+    float: left;
+    margin-left: 36px;
+}
+/*为每一个元素设置文字 同样用CSS来设置*/
+.screen_layout_three_wrap>nav>a:nth-child(1){
+    color: var(--html5TextColor);
+    border: 6px solid rgba(28,164,255,.4);
+    text-align: center;
+    line-height: 70px;
+}
+.screen_layout_three_wrap>nav>a:nth-child(2){
+    color: var(--phpTextColor);
+    border: 6px solid rgba(79,125,253,.4);
+    text-align: center;
+    line-height: 70px;
+}
+.screen_layout_three_wrap>nav>a:nth-child(3){
+    color: var(--javaTextColor);
+    border: 6px solid rgba(255,96,96,.4);
+    text-align: center;
+    line-height: 70px;
+}
+.screen_layout_three_wrap>nav>a:nth-child(4){
+    color: var(--pythonTextColor);
+    border: 6px solid rgba(39,189,229,.4);
+    text-align: center;
+    line-height: 70px;
+}
+.screen_layout_three_wrap>nav>a:nth-child(5){
+    color: var(--nodeTextColor);
+    border:6px solid rgba(144,189,75,.4);
+    text-align: center;
+    line-height: 70px;
+}
