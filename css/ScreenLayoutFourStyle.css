@@ -48,3 +48,7 @@
     margin-top: 32px;
     font-weight: normal;
 }
+.screen_layout_four_wrap>div>ul>li>img{
+    width: 80px;
+    height:80px;
+}

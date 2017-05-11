@@ -10,3 +10,29 @@
     margin:0 auto;
 }
 
+.screen_layout_five_wrap>img{
+    width:200px;
+    height:200px;
+    position: absolute;
+    left:50%;
+    top:101px;
+    transform: translateX(-50%);
+}
+
+.screen_layout_five_wrap>dl{
+    width:var(--screenItemWidth);
+    text-align: center;
+    position: absolute;
+    top:360px;
+    color: var(--defaultTextColorPrimary);
+}
+
+.screen_layout_five_wrap>dl>dt{
+    font-weight:bold;
+    font-size: var(--mainTextSize);
+}
+
+.screen_layout_five_wrap>dl>dd{
+    padding-top: 62px ;
+    font-size: var(--secondTextSize);
+}

@@ -1,0 +1,20 @@
+.screen_layout_six{
+    width:var(--matchParent);
+    height:200px;
+    background: #fff;
+    position: relative;
+}
+
+.screen_layout_six>div{
+    position: absolute;
+    width:240px;
+    height: 60px;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    line-height: 60px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    border:1px solid var(--textColorPrimary);
+}

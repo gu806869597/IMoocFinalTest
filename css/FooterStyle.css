@@ -1,0 +1,28 @@
+footer{
+    width:var(--matchParent);
+    height:106px;
+    background: #000;
+    position: relative;
+}
+
+footer>nav{
+    width: var(--matchParent);
+    top:32px;
+    position: absolute;
+    text-align: center;
+}
+
+footer>nav>a{
+    color: var(--defaultTextColorPrimary);
+    text-decoration: none;
+    margin-left: 34px;
+}
+
+footer>p{
+    width:var(--matchParent);
+    position: absolute;
+    top:57px;
+    color: #787d82;
+    text-align: center;
+    display: block;
+}
