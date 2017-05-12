@@ -57,3 +57,13 @@
 .screen_layout_four_wrap>div>ul>li:last-child{
     margin-right: 0px;
 }
+
+.screen_layout_four_wrap>div:last-child{
+  background: var(--secondTextColorPrimary);
+  width: 50px;
+  height: 3px ;
+  position: absolute;
+  top: 166px ;
+  left: 50%;
+  transform: translateX(-50%);
+}

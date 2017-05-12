@@ -36,3 +36,13 @@
     padding-top: 62px ;
     font-size: var(--secondTextSize);
 }
+
+.screen_layout_five_wrap>div:last-child{
+  background: var(--defaultTextColorPrimary);
+  width: 50px;
+  height: 3px ;
+  position: absolute;
+  bottom: 192px ;
+  left: 50%;
+  transform: translateX(-50%);
+}

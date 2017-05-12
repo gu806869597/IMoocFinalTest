@@ -1,7 +1,7 @@
 .screen_layout_three{
     background: #2b333b;
     z-index: 4 ;
-    position:relative; 
+    position:relative;
 }
 .screen_layout_three_wrap{
     width: var(--screenItemWidth);
@@ -79,4 +79,13 @@
     border:6px solid rgba(144,189,75,.4);
     text-align: center;
     line-height: 70px;
+}
+
+.screen_layout_three_wrap>div:last-child{
+  background: var(--secondTextColorPrimary);
+  width: 50px;
+  height: 3px ;
+  position: absolute;
+  top: 308px ;
+  right:  460px;
 }
