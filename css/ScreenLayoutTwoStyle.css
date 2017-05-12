@@ -1,12 +1,12 @@
 .screen_layout_two{
     background: #f3f5f7;
-    position: relative;
 }
 
 .screen_layout_two_wrap{
     width: var(--screenItemWidth);
     height: var(--screenItemHeight);
     margin:0 auto;
+    position: relative;
 }
 
 .screen_layout_two_wrap>dl{
@@ -54,15 +54,12 @@
 }
 
 .screen_layout_two_rocket{
-    width:var(--screenItemWidth);
+    width:266px;
     height:205px ;
     position: absolute;
-    bottom: 0 ;
-    left:50%;
-    margin-left: -600px;
+    bottom: 99px ;
     background: url("../img/sc2-2.png") no-repeat center;
     background-size: 266px 205px ;
     z-index: 3;
-    padding-left: 200px;
-    padding-bottom: 195px;
+    right:366px;
 }
