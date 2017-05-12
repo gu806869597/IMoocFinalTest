@@ -1,0 +1,124 @@
+/*动画基类*/
+.animation{
+    -webkit-transition-delay:0s;
+    transition-delay:0s;
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+    -webkit-transition-timing-function:ease-in-out;
+    transition-timing-function:ease-in-out;
+}
+
+/*初始向上滚动的动画*/
+.moveToTop_init{
+    transform: translateY(100%);
+    opacity: 0 ;
+}
+/*完成向上滚动的动画*/
+.moveToTop_done{
+    transform: translateY(0%);
+    opacity:1 ;
+}
+
+/*初始向下滚动的动画*/
+.moveToBottom_init{
+    transform: translateY(-100%);
+    opacity: 0 ;
+}
+
+/*完成向下滚动的动画*/
+.moveToBottom_done{
+    transform: translateY(0%);
+    opacity:1 ;
+}
+
+/*初始缩放*/
+.scale_init{
+  transform: scale(0,0);
+  opacity: 0 ;
+}
+/*完成缩放*/
+.scale_done{
+  transform: scale(1,1);
+  opacity: 1 ;
+}
+
+/*延迟0.5秒*/
+.delay5deg{
+  transition-delay: 0.5s ;
+}
+
+/*隐藏第二屏的人*/
+.hideTwoMan{
+  opacity:  0;
+}
+
+/*显示第二屏的人*/
+.showTwoMan{
+  opacity:  1 ;
+}
+
+/*显示火箭向上弹射的动画*/
+.showSlideAnimator{
+  animation: slideFromBottom 1.8s ;
+}
+/*完成初次动画的加载*/
+.done{
+
+}
+
+/*火箭动画*/
+@keyframes slideFromBottom {
+  0%{
+    opacity: 0 ;
+    transform: translateY(300%);
+  }
+  88%{
+    transform: translateY(300%);
+  }
+  95%{
+    transform: translateY(0%);
+  }
+  97%{
+    transform: translateY(20%);
+  }
+  100%{
+    opacity: 1 ;
+    transform: translateY(0%);
+  }
+}
+
+/*标题栏初始颜色*/
+.toolbarDefaultColor{
+  transition: all 1s ;
+  background: linear-gradient(rgba(21,21,21,1),rgba(255,255,255,0));
+}
+
+/*白色标题栏*/
+.toolbarWhiteColor{
+  transition: all 1s ;
+  background: rgba(255,255,255,.7);
+}
+
+/*侧边栏的初始动画*/
+.outline_init{
+  -webkit-transform:  translateX(100%);
+          transform:  translateX(100%);
+  -webkit-transition-delay:0;
+          transition-delay:0;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  -webkit-transition-timing-function:linear;
+          transition-timing-function:linear;
+}
+
+/*侧边栏出现的动画*/
+.outline_done{
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition-delay:0;
+          transition-delay:0;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  -webkit-transition-timing-function:linear;
+          transition-timing-function:linear;
+}

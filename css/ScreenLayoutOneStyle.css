@@ -11,7 +11,7 @@
 }
 
 .screen_layout_one_wrap>dl{
-    width: var(--screenItemWidth);
+    width: var(--matchParent);
     position: absolute;
     top:240px;
     color: var(--defaultTextColorPrimary);

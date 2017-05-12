@@ -5,7 +5,7 @@
     <title>
         Html5实践页面
     </title>
-
+    <!-- 引入CSS样式 -->
     <link href="css/BaseStyle.css" type="text/css" rel="stylesheet">
     <link href="css/ToolbarStyle.css" type="text/css" rel="stylesheet">
     <link href="css/ScreenLayoutOneStyle.css" type="text/css" rel="stylesheet">
@@ -15,66 +15,76 @@
     <link href="css/ScreenLayoutFiveStyle.css" type="text/css" rel="stylesheet">
     <link href="css/ScreenLayoutSixStyle.css" type="text/css" rel="stylesheet">
     <link href="css/FooterStyle.css" type="text/css" rel="stylesheet">
+    <link href="css/Animate.css" type="text/css" rel="stylesheet">
+    <!-- 导入JQuery和JS脚本文件 -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
   </head>
   <body>
-  <header>
-    <a href="#">H5实战页面</a>
-
-    <nav>
-      <a href="javascript:void(0)">实战课程</a>
-      <a href="javascript:void(0)">商业案例</a>
-      <a href="javascript:void(0)">课程体系</a>
-      <a href="javascript:void(0)">集成环境</a>
-      <a href="javascript:void(0)">云端学习</a>
+    <!-- 顶部标题栏 -->
+  <header class="toolbarDefaultColor" id="toolbar">
+    <!-- 标题文字 -->
+    <a href="#" id="toolbar_title">H5实战页面</a>
+    <!-- 菜单按钮 -->
+    <nav id="toolbar_titles">
+      <a href="javascript:void(0)" id="toolbar_title_one" class="nav_active">实战课程</a>
+      <a href="javascript:void(0)" id="toolbar_title_two">商业案例</a>
+      <a href="javascript:void(0)" id="toolbar_title_three">课程体系</a>
+      <a href="javascript:void(0)" id="toolbar_title_four">集成环境</a>
+      <a href="javascript:void(0)" id="toolbar_title_five">云端学习</a>
       <a href="javascript:void(0)">即刻学习</a>
     </nav>
   </header>
   <!--第一屏-->
-  <section class="screen_layout_one">
+  <section class="screen_layout_one" id="screen_layout_one">
     <div class="screen_layout_one_wrap">
       <dl>
-        <dt>
+        <dt class="animation moveToTop_init" id="screen_layout_one_title">
           实战课程重磅上线
         </dt>
-        <dd>
+        <dd class="animation moveToTop_init delay5deg" id="screen_layout_one_second_title">
           一键云学习，还在等待什么?
         </dd>
       </dl>
     </div>
   </section>
   <!--第二屏-->
-  <section class="screen_layout_two">
+  <section class="screen_layout_two" id="screen_layout_two">
     <div class="screen_layout_two_wrap">
       <dl>
-        <dt>
+        <dt class="animation moveToTop_init" id="screen_layout_two_title">
           每门课都是真实商业案例
         </dt>
-        <dd>
+        <dd class="animation moveToTop_init delay5deg" id="screen_layout_two_second_title">
           真实案例，真实场景，在实战中实践、操作、调试<br/>
           大牛带你体验BAT真实开发流程，所有开发过程————为您呈现
         </dd>
       </dl>
-
-      <div class="screen_layout_two_man"></div>
-      <div class="screen_layout_two_rocket"></div>
+      <!-- 第二屏的人 -->
+      <div class="animation screen_layout_two_man hideTwoMan delay5deg" id="screen_layout_two_man"></div>
+      <!-- 第二屏的火箭 -->
+      <div class="screen_layout_two_rocket" id="screen_layout_two_rocket"></div>
+      <!-- BAT的背景 -->
       <div class="screen_layout_two_bg"></div>
     </div>
   </section>
-
-  <section class="screen_layout_three">
-    <div class="screen_layout_three_image"></div>
+  <!-- 第三屏 -->
+  <section class="screen_layout_three" id="screen_layout_three">
+    <!-- 左侧图片 -->
+    <div class="screen_layout_three_image animation delay5deg hideTwoMan" id="screen_layout_three_image"></div>
     <div class="screen_layout_three_wrap">
       <dl>
-        <dt>
+        <dt class="animation moveToTop_init" id="screen_layout_three_title">
           强大的语言课程体系支持
         </dt>
-        <dd>
+        <dd class="animation moveToTop_init delay5deg" id="screen_layout_three_second_title">
           学习环境与课程轻松对接，安装、调试、写入、部署、运行，一站式解决<br/>
           ，让你体验开发全流程
         </dd>
       </dl>
 
-      <nav>
+      <!-- 第三屏底部的菜单 -->
+      <nav id="screen_layout_three_menu">
         <a href="javascript:void(0)">HTML5</a>
         <a href="javascript:void(0)">PHP</a>
         <a href="javascript:void(0)">JAVA</a>
@@ -83,33 +93,33 @@
       </nav>
     </div>
   </section>
-
-  <section class="screen_layout_four">
+  <!-- 第四屏 -->
+  <section class="screen_layout_four" id="screen_layout_four">
     <div class="screen_layout_four_wrap">
       <dl>
-        <dt>
+        <dt id="screen_layout_four_title" class="animation moveToTop_init">
           省去本地复杂的环境搭建
         </dt>
-        <dd>
+        <dd id="screen_layout_four_second_title" class="animation moveToTop_init delay5deg">
           你可以告别在虚拟机中调试开发了
         </dd>
       </dl>
 
       <div>
         <ul>
-          <li>
+          <li class="animation scale_init" id="screen_layout_four_list_item1">
             <img src="img/sc4-1.png" class="screen_layout_four_wrap_img"/>
             <h4>实战课程集成开发环境</h4>
           </li>
-          <li>
+          <li class="animation scale_init" id="screen_layout_four_list_item2">
             <img src="img/sc4-2.png" class="screen_layout_four_wrap_img"/>
             <h4>内置终端命令行</h4>
           </li>
-          <li>
+          <li class="animation scale_init" id="screen_layout_four_list_item3">
             <img src="img/sc4-3.png" class="screen_layout_four_wrap_img"/>
             <h4>编译你的应用程序</h4>
           </li>
-          <li>
+          <li class="animation scale_init" id="screen_layout_four_list_item4">
             <img src="img/sc4-4.png" class="screen_layout_four_wrap_img"/>
             <h4>通过云端服务输出效果</h4>
           </li>
@@ -117,26 +127,28 @@
       </div>
     </div>
   </section>
-
-  <section class="screen_layout_five">
+  <!-- 第五屏 -->
+  <section class="screen_layout_five" id="screen_layout_five">
     <div class="screen_layout_five_wrap">
-      <img src="img/sc5-1.png"/>
+      <!-- 图片 -->
+      <img src="img/sc5-1.png" class="animation scale_init" id="screen_layout_five_img"/>
 
       <dl>
-        <dt>
+        <dt class="animation moveToTop_init" id="screen_layout_five_title">
           云端学习可以这么简单
         </dt>
-        <dd>
+        <dd class="animation moveToTop_init delay5deg" id="screen_layout_five_second_title">
           看视频，敲代码，一气呵成。结合慕课网为你提供的云端学习工具，所见即所得。从此学习不一样
         </dd>
       </dl>
     </div>
   </section>
-
-  <section class="screen_layout_six">
+  <!-- 第六屏 -->
+  <section class="screen_layout_six" id="screen_layout_six">
     <div>继续学习体验</div>
   </section>
 
+  <!-- 底部网站信息 -->
   <footer>
     <nav>
         <a href="javascript:void(0)">
@@ -166,5 +178,16 @@
     </nav>
       <p>Copyright © 2015 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
   </footer>
+
+  <!-- 浮动窗口 -->
+  <div class="outline outline_init" id="outline">
+    <a href="javascript:;" class="outline__item" id="outline_item_one">实</a>
+    <a href="javascript:;" class="outline__item" id="outline_item_two">商</a>
+    <a href="javascript:;" class="outline__item" id="outline_item_three">课</a>
+    <a href="javascript:;" class="outline__item" id="outline_item_four">环</a>
+    <a href="javascript:;" class="outline__item" id="outline_item_five">云</a>
+  </div>
+
+
   </body>
 </html>

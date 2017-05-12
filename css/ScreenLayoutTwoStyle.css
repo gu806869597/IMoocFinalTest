@@ -10,7 +10,7 @@
 }
 
 .screen_layout_two_wrap>dl{
-    width: var(--screenItemWidth);
+    width: var(--matchParent);
     position: absolute;
     top:90px;
     text-align: center;
@@ -30,7 +30,7 @@
 }
 
 .screen_layout_two_man{
-    width:var(--screenItemWidth);
+    width: var(--matchParent);
     height:380px;
     position: absolute;
     bottom:0;
@@ -42,7 +42,7 @@
 }
 
 .screen_layout_two_bg{
-    width:var(--screenItemWidth);
+    width: var(--matchParent);
     height:361px;
     position: absolute;
     bottom:0;

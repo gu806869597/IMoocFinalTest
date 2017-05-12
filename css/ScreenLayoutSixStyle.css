@@ -18,3 +18,8 @@
     border-radius: 5px;
     border:1px solid var(--textColorPrimary);
 }
+.screen_layout_six>div:hover{
+  border:1px solid var(--secondTextColorPrimary);
+  color: var(--secondTextColorPrimary);
+  cursor:pointer;
+}

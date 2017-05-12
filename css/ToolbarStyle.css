@@ -1,7 +1,7 @@
+/*Fixed使元素基于浏览器布局 脱离文档流*/
 header{
     width: var(--matchParent);
     height:var(--toolbarSize);
-    background: linear-gradient(rgba(21,21,21,1),rgba(255,255,255,0));
     position: fixed;
     top: 0;
     left: 0;
@@ -34,6 +34,7 @@ header>nav>a{
     margin-left: 40px;
     color: var(--defaultTextColorPrimary);
 }
+
 header>nav>a:last-child{
     color: var(--defaultTextColorPrimary);
     background: var(--secondTextColorPrimary);
@@ -42,6 +43,14 @@ header>nav>a:last-child{
     width: 95px;
     height:40px;
 }
+header>nav>a:hover{
+    color: var(--secondTextColorPrimary);
+}
 header>nav>a:last-child:hover{
+    color: var(--textColorPrimary);
     box-shadow: 0 0 5px #2b2b2b;
+}
+
+.nav_active{
+    border-bottom: 2px solid var(--secondTextColorPrimary);
 }

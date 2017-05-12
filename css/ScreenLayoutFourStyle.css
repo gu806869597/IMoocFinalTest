@@ -1,5 +1,7 @@
 .screen_layout_four{
     background: #f3f5f7;
+    z-index: 5 ;
+    position: relative;
 }
 
 .screen_layout_four_wrap{
@@ -11,7 +13,7 @@
 
 .screen_layout_four_wrap>dl{
     position: absolute;
-    width: var(--screenItemWidth);  
+    width: var(--matchParent);
     top:90px;
     left:50%;
     margin-left: -600px;
@@ -29,20 +31,19 @@
 }
 
 .screen_layout_four_wrap>div{
-    width:var(--screenItemWidth);
+    width:var(--matchParent);
     position: absolute;
     top: 285px;
     text-align: center;
 }
 
 .screen_layout_four_wrap>div>ul{
-    width:var(--screenItemWidth);
     display: inline-block;
 }
 .screen_layout_four_wrap>div>ul>li{
     list-style-type: none;
     float: left;
-    margin-left: 130px;
+    margin-right: 130px;
 }
 .screen_layout_four_wrap>div>ul>li>h4{
     margin-top: 32px;
@@ -51,4 +52,8 @@
 .screen_layout_four_wrap>div>ul>li>img{
     width: 80px;
     height:80px;
+}
+
+.screen_layout_four_wrap>div>ul>li:last-child{
+    margin-right: 0px;
 }
